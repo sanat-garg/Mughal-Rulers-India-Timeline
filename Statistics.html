@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+
+<script>
+window.onload = function () {
+	
+var chart = new CanvasJS.Chart("chartContainer", {
+	animationEnabled: true,
+	
+	title:{
+		text:"Mughal Dynasty"
+	},
+	axisX:{
+		interval: 1
+	},
+	axisY2:{
+		interlacedColor: "rgba(1,77,101,.2)",
+		gridColor: "rgba(1,77,101,.1)",
+		title: "Days ruled"
+	},
+	data: [{
+		type: "bar",
+		name: "companies",
+		axisYType: "secondary",
+		color: "#014D65",
+		dataPoints: [
+			{ y: 98, label: "Rafi ud-Radajat" },
+			{ y: 103, label: "Shah Jahan III" },
+			{ y: 305, label: "Shah Jahan III" },
+			{ y: 350, label: "Jahandar Shah" },
+			{ y: 1711, label: "Babar" },
+			{ y: 1714, label: "Bahdur Shah" },
+			{ y: 2005, label: "Alamgir II" },
+			{ y: 2225, label: "Ahmad Shah Bahadur" },
+			{ y: 2239, label: "Farrukhsiyar" },
+			{ y: 3769, label: "Humayun" },
+			{ y: 7298, label: "Bahadur Shah Zafar" },
+			{ y: 8029, label: "Jahangir" },
+			{ y: 10442, label: "Muhammad Shah" },
+			{ y: 11151, label: "Shah Jahan" },
+			{ y: 11271, label: "Akbar II" },
+			{ y: 16763, label: "Shah Alam II" },
+			{ y: 17746, label: "Aurangzeb" },
+			{ y: 18156, label: "Akbar" }
+		]
+	}]
+});
+chart.render();
+
+}
+</script>
+</head>
+<body>
+<div id="chartContainer" style="height: 370px; width: 100%;"></div>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</html>
